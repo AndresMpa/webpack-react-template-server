@@ -13,14 +13,19 @@ If you need a better explanation read the content below
 ## Webpack dependencies
 
 ```bash
-npm i webpack@latest webpack-cli@latest babel-loader@latest html-webpack-plugin@latest mini-css-extract-plugin@latest
-npm i -D webpack-dev-server@latest
+npm i -D webpack@latest webpack-cli@latest html-webpack-plugin@latest mini-css-extract-plugin@latest terser-webpack-plugin webpack-dev-server@latest
 ```
 
 Some common packages
 
 ```bash
-npm i -D @babel/core @babel/preset-env
+npm i -D @babel/core @babel/preset-env @babel/preset-react @babel/plugin-transform-runtime babel-plugin-transform-class-properties babel-eslint
+```
+
+If you want to use TS also install
+
+```bash
+npm i -D @types/webpack
 ```
 
 Also an useful formatter could be `prettier`
@@ -34,13 +39,13 @@ npm i prettier@latest
 ##### Image support (Lossless optimization)
 
 ```bash
-npm i imagemin-gifsicle imagemin-jpegtran imagemin-optipng imagemin-svgo --save-dev
+npm i -D image-minimizer-webpack-plugin imagemin-gifsicle imagemin-jpegtran imagemin-optipng imagemin-svgo
 ```
 
 ##### Image support (Lossy optimization)
 
 ```bash
-npm i imagemin-gifsicle imagemin-mozjpeg imagemin-pngquant imagemin-svgo --save-dev
+npm i -D image-minimizer-webpack-plugin imagemin-gifsicle imagemin-mozjpeg imagemin-pngquant imagemin-svgo
 ```
 
 ### CSS support
@@ -51,7 +56,7 @@ To use sass or scss, add this configuration to `webpack.config.dev.js` and `webp
 and install the following packages
 
 ```bash
-npm i stylus stylus-loader --save-dev
+npm i sass sass-loader --save-dev
 ```
 
 ```javascript
@@ -147,4 +152,16 @@ React extra common packages
 
 ```bash
 npm i react-router-dom@latest react-redux@latest redux@latest
+```
+
+To support TS
+
+```bash
+npm i typescript @types/react @types/react-dom
+```
+
+A better way to handle promises with
+
+```bash
+npm i axios
 ```
