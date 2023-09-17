@@ -1,9 +1,10 @@
 # React + Webpack template
 
-Quick simple to use, just run the installation script using a terminal, that's it.
+Quick simple to use, just run the installation script using a terminal or common `npm i`, that's it.
 
 ```bash
-./install.sh
+npm i # To get versions from ./package.json
+bash install.sh # To get last versions of everything
 ```
 
 If you need a better explanation read the content below
