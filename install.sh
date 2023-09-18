@@ -7,7 +7,10 @@ npm i axios react react-dom react-router-dom typescript @types/react @types/reac
 npm i -D webpack@latest webpack-cli@latest html-webpack-plugin@latest mini-css-extract-plugin@latest terser-webpack-plugin webpack-dev-server@latest
 
 # Loaders
-npm i -D babel-loader html-loader css-loader ts-loader
+npm i -D babel-loader html-loader style-loader css-loader ts-loader
+
+# CSS Pre process
+npm i -D sass sass-loader
 
 # Images support
 npm i -D image-minimizer-webpack-plugin imagemin-gifsicle imagemin-jpegtran imagemin-optipng imagemin-svgo
